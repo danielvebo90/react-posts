@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import {Grid} from 'semantic-ui-react';
+import { Row, Col } from 'react-bootstrap'
+import Votes from "./components/votes";
+import Buttons from "./components/orderbuttons";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+class App extends Component {
+  render() {
+    return (
+      <div class="container">
+        <Grid>
+          <Row className="">
+            <Col md={8} mdOffset={2} >
+              <h1>Blog posts populares</h1>
+              <Buttons />
+              <Votes />
+            </Col>
+          </Row>
+      </Grid>
     </div>
-  );
+    );
+  }
 }
-
 export default App;

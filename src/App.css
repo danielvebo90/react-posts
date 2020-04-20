@@ -1,38 +1,70 @@
-.App {
+
+Button {
+  margin-left: 5px;
+
+}
+
+.container {
+  padding: 10px 80px;
+}
+
+.grid{
+  margin: 20px 20px 20px 20px;
+}
+
+.image {
+  width:110px;
+  height:70px;
+}
+h1 {
   text-align: center;
+  margin-bottom: 30px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.authoravatar {
+  width:35px;
+  height:33px;
+  border-radius: 50%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.writtenby {
+  color: grey
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+div.posts-grid{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+div.general-grid {
+  /*border-top: 1px solid rgb(202, 202, 202);*/
+  border-bottom: 1px solid rgb(202, 202, 202);
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.votes {
+  height: 10em;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center }
+.arrow {color: black }
+.arrow:hover {
+  cursor: pointer;
+  color: blue }
+
+@media (min-width: 768px) {
+  .image {
+    width:210px;
+    height:140px;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+.btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #f1f1f1;
+  border-radius: 0;
+  transition: .2s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn:hover, .btn:focus {
+  border: 1px solid #333;
+  background-color: #fff;
+  color: #000;
 }
